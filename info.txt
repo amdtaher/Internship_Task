@@ -5,4 +5,4 @@ Github Repo Link--
 https://github.com/amdtaher/Internship_Task
 
 Netlify Live Site Link--
-https://intern-taskbyt.netlify.app/
+https://taskbyt.netlify.app/
