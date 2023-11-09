@@ -108,6 +108,9 @@
     .header, .logo, .navigation-bar{
         flex-basis: 100%;
     }
+    .header{
+        padding: 25px 30px;
+    }
     .logo{
         margin-bottom: 10px;
     }
