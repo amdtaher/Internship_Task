@@ -1,0 +1,208 @@
+/* 
+    Site Name: The Tanveer's Portfolio
+    Author: Tanveer Ahmed
+
+    Index
+    --------
+    00. Base
+    01. Header
+    02. Banner
+*/
+
+/* 00. Base */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap');
+:root{
+    --primary_color: #E4B976;
+    --secondary_color: #111111;
+    --btn_color: #BBB2CE; 
+    --text_color: rgba(17, 17, 17, 0.90);
+    --white: #fff;   
+}
+
+/* Universal Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Archivo', sans-serif;
+    padding: 20px 15px;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    display: inline-block;
+    color: var(--secondary_color);
+    text-decoration: none;
+    transition: .3s;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+h2,h4,a,p{
+    text-transform: capitalize;
+}
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+.nav-btn{
+    padding: 16px 25px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--secondary_color);
+    background-color: var(--btn_color);
+}
+.nav-btn:hover{
+    background-color: transparent;
+    color: var(--secondary_color);
+    background-color: var(--primary_color);
+}
+
+/* Common Styles */
+.header, .navigation-bar, .banner, .banner-buttons, .banner-achievements, .img-buttons{
+    display: flex;
+    flex-flow: row wrap;
+}
+.header, .banner, .banner-buttons, .banner-achievements {
+    justify-content: space-between;
+}
+.header, .banner-buttons{
+    align-items: center;
+}
+.banner-content, .banner-img{
+    flex: 1;
+    border-radius: 20px;
+}
+
+/* 01. Header */
+/* Some styles have already been included in the Common Styles Section */
+.header{
+    background-color: var(--secondary_color);
+    border-radius: 10px;
+    padding: 25px 40px;
+    margin-bottom: 15px;
+}
+.logo{
+    flex-basis: 117px;
+}
+.navigation-bar{
+    gap: 42px;
+}
+.navigation-bar li a{
+    color: var(--white);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.navigation-bar li a:hover{
+    color: var(--primary_color)
+}
+
+/* 02.Banner */
+/* Some styles have already been included in the Common Styles Section */
+/* -- */
+/* a.Banner-Content Section*/
+.banner-content{
+    margin-right: 15px;
+    padding: 75px 40px 0;
+    background-color: var(--primary_color);
+}
+.banner-content h2{
+    font-size: 110px;
+    font-weight: 600;
+    line-height: 124px;
+}
+.banner-content p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 20px 0 50px;
+}
+.banner-content .banner-buttons{
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+.banner-content .banner-buttons li a{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 20px 35px;
+    border: 1px solid var(--secondary_color);
+    border-radius: 40px;
+}
+.banner-content .banner-buttons li:last-child a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--text_color);
+    margin-left: 40px;
+    padding: 0;
+    border: none;
+}
+.banner-content .banner-buttons li a:hover{
+    background-color: var(--white);
+}
+.banner-content .banner-buttons li:last-child a:hover{
+    background-color: transparent;
+    color: var(--white);
+}
+.banner-content .banner-achievements li h4{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70px;
+}
+.banner-content .banner-achievements li p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* b.Banner-Img Section */
+.banner-img{
+    position: relative;
+}
+.banner-img img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.banner-img .img-buttons{
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 30px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.banner-img .img-buttons li a{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--secondary_color);
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+}
+.banner-img .img-buttons li:last-child a{
+    color: var(--white);
+    background-color: var(--secondary_color);
+}
+.banner-img .img-buttons li a i{
+    font-size: 20px;
+}
+.banner-img .img-buttons li a:hover{
+    background-color: var(--primary_color);
+}
+
+/* End */
