@@ -96,7 +96,7 @@
 /* Mobile Device Checking Size- 400px */
 @media only screen and (max-width:767px){
     body{
-        padding: 0;
+        padding: 20px 0;
     }
     .container{
         width: 350px;
@@ -105,29 +105,44 @@
     .header-area{
         margin-top: 10px;
     }
-    .header{
-        width: 100%;
-        padding: 20px 0;
+    .header, .logo, .navigation-bar{
+        flex-basis: 100%;
     }
     .logo{
-        flex-basis: 100%;
-        text-align: center;
+        margin-bottom: 10px;
     }
-    .navigation-bar, .nav-btn{
+    .navigation-bar{
         display: none;
-    }
-    .header, .banner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .header{
         flex-direction: column;
     }
+    .navigation-bar li a{
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+    .navigation-bar li a:hover{
+        color: var(--secondary_color);
+        background-color: var(--primary_color) !important;
+    }
+    .nav-btn{
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .humburger{
+        color: white;
+        font-size: 30px;
+        padding: 10px 0;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: block;
+    }
+    /* Banner */
     .banner{
         flex-direction: column-reverse;
     }
-    /* Banner */
     .banner-content{
         padding: 30px 20px 0;
         margin-right: 0;

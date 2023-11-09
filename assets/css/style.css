@@ -51,21 +51,6 @@ h2,h4,a,p{
     width: 1410px;
     margin: 0 auto;
 }
-.nav-btn{
-    padding: 16px 25px;
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 500;
-    border-radius: 30px;
-    text-align: center;
-    color: var(--secondary_color);
-    background-color: var(--btn_color);
-}
-.nav-btn:hover{
-    background-color: transparent;
-    color: var(--secondary_color);
-    background-color: var(--primary_color);
-}
 
 /* Common Styles */
 .header, .navigation-bar, .banner, .banner-buttons, .banner-achievements, .img-buttons{
@@ -90,6 +75,7 @@ h2,h4,a,p{
     border-radius: 10px;
     padding: 25px 40px;
     margin-bottom: 15px;
+    position: relative;
 }
 .logo{
     flex-basis: 117px;
@@ -106,6 +92,24 @@ h2,h4,a,p{
 }
 .navigation-bar li a:hover{
     color: var(--primary_color)
+}
+.nav-btn{
+    padding: 16px 25px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--secondary_color);
+    background-color: var(--btn_color);
+}
+.nav-btn:hover{
+    background-color: transparent;
+    color: var(--secondary_color);
+    background-color: var(--primary_color);
+}
+.humburger{
+    display: none;
 }
 
 /* 02.Banner */
