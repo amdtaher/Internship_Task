@@ -2,7 +2,7 @@ Figma Design Link--
 https://www.figma.com/file/vP2P7o9MhNMNlYuGP9I2Se/Frontend-Intern-Task?node-id=0%3A1&mode=dev
 
 Github Repo Link--
-https://github.com/amdtaher/Internship_Task
+https://github.com/amdtaher/internship_task
 
 Netlify Live Site Link--
 https://taskby-taher.netlify.app/
